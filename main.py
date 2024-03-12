@@ -1,9 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
-# from https://www.youtube.com/watch?v=yKHJsLUENl0&list=PLHocQMwDsV-jp3z7T4ousLoTpaM_3uGBs&index=23&t=96s&ab_channel=PatrickLoeber
-# 31:01 Delete
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
