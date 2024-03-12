@@ -12,14 +12,14 @@
 </head>
 <body>
     <div style="margin-top: 50px;" class="ui container">
-    <h1 class="ui center aligned header">ToDo App</h1>
+    <h1 class="ui center aligned header" style="font-size: 3.5em; font-family: Copperplate, Fantasy;">ToDo App</h1>
 
     <form class="ui form" action="/add" method="post">
         <div class="field">
-            <label for="'title">ToDo Title</label>
+            <label for="'title" style="font-size: 1.4em; margin-bottom: 10px;">ToDo Title</label>
             <input type="text" name="title" placeholder="Enter ToDo...">
             <br>
-            <button class="ui blue button" type="submit">Add</button>
+            <button class="ui blue button" style="margin-top: 10px; font-size: 1.2em;" type="submit">Add</button>
         </div>
 
 
@@ -35,8 +35,8 @@
             <span class="ui green label">Completed</span>
         {% endif %}
 
-        <a class="ui blue button" href="/update/{{ todo.id }}">Update</a>
-        <a class="ui red button"href="/delete/{{ todo.id }}">Delete</a>
+        <a class="ui inverted green button" href="/update/{{ todo.id }}">Update</a>
+        <a class="ui inverted red button" href="/delete/{{ todo.id }}">Delete</a>
     </div>
     {% endfor %}
     </div>
